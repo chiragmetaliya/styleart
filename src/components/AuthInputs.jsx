@@ -28,6 +28,9 @@ export default function AuthInputs() {
           <input
             type="email"
             className={emailNotValid ? 'invalid' : undefined}
+            // style={{
+            //   backgroundColor: emailNotValid ? '#fed2d2' : '#d1d5db'
+            // }}
             onChange={(event) => handleInputChange('email', event.target.value)}
           />
         </p>
@@ -42,7 +45,6 @@ export default function AuthInputs() {
           />
         </p>
       </div>
-      <p>Some text</p>
       <div className="actions">
         <button type="button" className="text-button">
           Create a new account
